@@ -1,0 +1,27 @@
+{
+  "name": "rabbit-http",
+  "version": "1.0.0",
+  "description": "rabbit http queues sender",
+  "main": "app.js",
+  "scripts": {
+    "start1": "tsc && node dist/app.js 1",
+    "start10": "tsc && node dist/app.js 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imareo/rabbit-http.git"
+  },
+  "author": "Oleg Arefyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imareo/rabbit-http/issues"
+  },
+  "homepage": "https://github.com/imareo/rabbit-http#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.20"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  }
+}
