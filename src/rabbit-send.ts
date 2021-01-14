@@ -73,7 +73,7 @@ const rabbitRequest = (index: number) => fetch(url, {
 
 
 if (process.argv.length !== 3) {
-    console.log('Use: node app.js packets_number');
+    console.log('Use: node rabbit-send.js packets_number');
     process.exit(0);
 } else {
     const [packets] = process.argv.slice(2);

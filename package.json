@@ -1,6 +1,6 @@
 {
   "name": "rabbit-http",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "rabbit http queues sender",
   "main": "app.js",
   "scripts": {
