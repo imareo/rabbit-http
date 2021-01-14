@@ -2,6 +2,7 @@ require('dotenv').config({path: __dirname + '/../.env'})
 export {}
 const fetch = require('node-fetch')
 
+
 type datasetType = {
     "eventPersonAttendanceId": string
     "personId": string
@@ -11,12 +12,15 @@ type datasetType = {
     "courseUnitRealizationId": string
 }
 
-const QUEUES = process.env.QUEUES
 const ROUTING_KEY = process.env.ROUTING_KEY
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT
-const PATH = process.env.PATH_BEGIN! + QUEUES + process.env.PATH_END!
+
+const VHOST = process.env.VHOST
+const EXCHANGE = process.env.EXCHANGE_SEND
+const PATH = process.env.PATH_SEND_BEGIN! + VHOST + '/' + EXCHANGE + process.env.PATH_SEND_END!
+
 const USER = process.env.USER_NAME
 const PASS = process.env.USER_PASS
 

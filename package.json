@@ -4,8 +4,14 @@
   "description": "rabbit http queues sender",
   "main": "app.js",
   "scripts": {
-    "start1": "tsc && node dist/app.js 1",
-    "start10": "tsc && node dist/app.js 10"
+    "send1": "tsc && node dist/rabbit-send.js 1",
+    "send10": "tsc && node dist/rabbit-send.js 10",
+    "send100": "tsc && node dist/rabbit-send.js 100",
+    "send1000": "tsc && node dist/rabbit-send.js 1000",
+    "req1": "tsc && node dist/rabbit-req.js 1",
+    "req10": "tsc && node dist/rabbit-req.js 10",
+    "req50": "tsc && node dist/rabbit-req.js 50",
+    "req100": "tsc && node dist/rabbit-req.js 100"
   },
   "repository": {
     "type": "git",
