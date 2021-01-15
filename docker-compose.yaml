@@ -1,8 +1,5 @@
 version: '3'
 
-volumes:
-  postgres_data:
-
 services:
   rabbit:
     image: rabbitmq:3.8.8-management-alpine

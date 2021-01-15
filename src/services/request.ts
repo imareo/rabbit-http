@@ -6,7 +6,7 @@ function checkStatus(res: any) {
     throw Error(res.statusText)
 }
 
-export = (url: string, method: 'POST' | 'GET', body: string, auth: string): void => fetch(url, {
+const rabbitRequest = (url: string, method: 'POST' | 'GET', body: string, auth: string): void => fetch(url, {
     method: method,
     body: body,
     headers: {
@@ -19,3 +19,5 @@ export = (url: string, method: 'POST' | 'GET', body: string, auth: string): void
     .then((res: any) => res.json())
     .then((json: JSON) => console.dir(json, {depth: null}))
     .catch((err: Error) => console.log(err))
+
+export {rabbitRequest}

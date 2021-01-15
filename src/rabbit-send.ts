@@ -1,5 +1,5 @@
 require('dotenv').config({path: __dirname + '/../.env'})
-import rabbitRequest from './services/request'
+import {rabbitRequest} from './services/request'
 
 
 type datasetType = {
