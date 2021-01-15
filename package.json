@@ -1,17 +1,19 @@
 {
   "name": "rabbit-http",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "rabbit http queues sender",
   "main": "app.js",
   "scripts": {
-    "send1": "tsc && node dist/rabbit-send.js 1",
-    "send10": "tsc && node dist/rabbit-send.js 10",
-    "send100": "tsc && node dist/rabbit-send.js 100",
-    "send1000": "tsc && node dist/rabbit-send.js 1000",
-    "req1": "tsc && node dist/rabbit-req.js 1",
-    "req10": "tsc && node dist/rabbit-req.js 10",
-    "req50": "tsc && node dist/rabbit-req.js 50",
-    "req100": "tsc && node dist/rabbit-req.js 100"
+    "send1": "node dist/rabbit-send.js 1",
+    "send10": "node dist/rabbit-send.js 10",
+    "send100": "node dist/rabbit-send.js 100",
+    "send1000": "node dist/rabbit-send.js 1000",
+    "req1": "node dist/rabbit-req.js 1",
+    "req10": "node dist/rabbit-req.js 10",
+    "req100": "node dist/rabbit-req.js 100",
+    "compile": "tsc",
+    "start rabbitmq": "docker-compose up -d",
+    "stop rabbitmq": "docker-compose stop"
   },
   "repository": {
     "type": "git",
