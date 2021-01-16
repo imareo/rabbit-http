@@ -1,8 +1,7 @@
 {
   "name": "rabbit-http",
   "version": "1.1.0",
-  "description": "rabbit http queues sender",
-  "main": "app.js",
+  "description": "rabbit http api test message send-receive",
   "scripts": {
     "send1": "node dist/rabbit-send.js 1",
     "send10": "node dist/rabbit-send.js 10",
